@@ -56,4 +56,12 @@ const requestHandler = (req, res) => {
   }
 };
 
-module.exports = requestHandler;
+const anotherFunction = () => {
+  console.log("This is Another Test Function");
+};
+
+// module.exports = { requestHandler, anotherFunction };
+
+//another way of exporting;
+module.exports.handler = requestHandler;
+module.exports.testFunction = anotherFunction;
