@@ -63,5 +63,8 @@ const anotherFunction = () => {
 // module.exports = { requestHandler, anotherFunction };
 
 //another way of exporting;
-module.exports.handler = requestHandler;
-module.exports.testFunction = anotherFunction;
+// module.exports.handler = requestHandler;
+// module.exports.testFunction = anotherFunction;
+
+exports.handler = requestHandler;
+exports.testFunction = anotherFunction;
